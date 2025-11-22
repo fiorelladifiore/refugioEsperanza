@@ -33,7 +33,7 @@
     box-shadow: 0 0 15px rgba(77, 127, 107, 0.6);
 }
 body{
-   background-color: #ff961f;
+   background-color: #faf4ed;
 }
 
 nav {
@@ -98,10 +98,10 @@ footer {
 
 .containerMain{
     width: 100%;
-  background-color: #4CAF50; 
-  padding: 0;
-  display: contents;
-  justify-content: center; 
+    background-color: #4CAF50; 
+    padding: 0;
+    display: contents;
+    justify-content: center; 
 }
 
 .bannerContainer {
@@ -113,8 +113,8 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-  flex-direction: row;
-  text-align: center;
+    flex-direction: row;
+    text-align: center;
  
 }
 
@@ -159,7 +159,16 @@ footer {
 
 .mainImage img {
     width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  display: block;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+
+h1{
+    color: #4d7f6b;
+    font-size: 3rem;
+}
+h2{
+    font-size: 1.8rem;
 }
