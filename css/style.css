@@ -34,6 +34,7 @@
 }
 body{
    background-color: #faf4ed;
+   background-color: #faf4ed;
 }
 
 nav {
@@ -105,10 +106,10 @@ footer {
 
 
     width: 100%;
-  background-color: #4CAF50; 
-  padding: 0;
-  display: contents;
-  justify-content: center; 
+    background-color: #4CAF50; 
+    padding: 0;
+    display: contents;
+    justify-content: center; 
 }
 
 .homeBannerContainer1 {
@@ -121,9 +122,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-  flex-direction: row;
-  text-align: center;
+
+    flex-direction: row;
+    text-align: center;
  
 }
 
@@ -171,9 +172,9 @@ footer {
 
 .homeImage1 img {
     width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  display: block;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
 }
 
 
