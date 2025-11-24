@@ -1,7 +1,36 @@
+* {
+    font-family: "Nunito", sans-serif;
+}
+/* Sección donar insumos */
+
+.container-ayudar {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.seccion-insumos {
+    margin-top: 80px;
+}
+
+.cards-insumos {
+    margin-top: 100px;
+}
+
+.titulo-insumos h1 {
+    font-size: 60px;
+    color: #49816e;
+}
+
+.titulo-insumos h2 {
+    font-size: 25px;
+}
+
 .btn-insumos {
     background-color: #619885;
     color: #faf4ed;
     padding: 15px 40px;
+    margin-top: 40px;
     font-size: 1.4rem;
     font-weight: 600;
     border-radius: 10px;
@@ -14,27 +43,41 @@
 }
 
 
+/* Sección rifa */
+
 input[type="file"] {
     display: none;
 }
 
 .seccion-rifa {
     width: 100%;
+    margin-top: 150px;
 }
 
 .seccion-rifa img {
     width: 65%;
+    height: 600px;
+    margin-top: 20px;
 }
 
 .seccion-rifa form {
     width: 35%;
+    margin-top: 20px;
 }
 
+.titulo-rifa h1{
+    font-size: 50px;
+    color: #49816e;
+}
+
+.titulo-rifa h2{
+    font-size: 18px;
+}
 
 .custom-file-upload {
     border: 1px solid #ccc;
     border-radius: 6px;
-    background-color: #faf4ed;
+    background-color: white;
     display: inline-block;
     padding: 6px 12px;
     font-weight: 600;
@@ -47,6 +90,7 @@ input[type="file"] {
 .custom-btn-submit {
     background-color: #619885;
     color: #faf4ed;
+    padding: 14px;
     transition: background 0.3s, transform 0.2s;
 }
 
@@ -56,23 +100,51 @@ input[type="file"] {
     font-weight: 600;
 }
 
+
+/* Sección donación */
+
+.seccion-donacion {
+    margin-top: 180px;
+}
+
+.titulo-donacion h1 {
+    font-size: 60px;
+    color: #49816e;
+}
+
+.titulo-donacion h2 {
+    font-size: 20px;
+}
+
+.contenido-donacion {
+    margin-top: 70px;
+    padding-bottom: 80px;
+}
+
+.container-transferencia h2 {
+    font-size: 35px;
+}
+
 .perrito-transferencia {
-    width: 120px;
-    bottom: 54%;
+    width: 130px;
+    bottom: 60%;
     left: 25%;
     position: absolute;
     z-index: 10;
 }
 
 .cuadro-transferencia {
-    margin-top: 100px;
-    width: 50%;
-    padding: 10px;
+    margin-top: 110px;
+    padding: 12px;
     border: 1px solid black;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 /* icono de copiar */
 i {
     cursor: pointer;
+}
+
+.icono-metodo-pago {
+    margin-top: 70px;
 }
