@@ -34,7 +34,6 @@
 }
 body{
    background-color: #faf4ed;
-   background-color: #faf4ed;
 }
 
 nav {
@@ -250,21 +249,105 @@ footer {
 }
 /* Responsivo */
 @media (max-width: 768px) {
-    .homeBannerText2 {
+
+    .homeBannerContainer1 {
+        flex-direction: column-reverse;
         text-align: center;
-        max-width: 90%;
-    }
-    .homeBannerContainer2{
-        justify-content: center;
-        padding: 40px 20px;
     }
 
-    .homeBannerContainer1{
-       display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction:column-reverse;
+
+
+    .homeBannerText1 h1 {
+        font-size: 4rem;
+        transform: translateY(0); /* evita que se corte */
+    }
+
+    .homeBannerText1 p {
+        font-size: 1.1rem;
+    }
+
+    .homeBannerText2{
+        align-items: center;
         text-align: center;
     }
- 
+
+    .homeImage1 {
+        height: auto;
+    }
+
+    .homeImage1 img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+        .footer-simple .container {
+        text-align: center;
+        flex-direction: column !important;
+        gap: 25px;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .footer-simple img.footer-logo {
+        margin: 0 auto;
+    }
+
+    .footer-simple h5 {
+        margin-bottom: 8px;
+        font-size: 1.2rem;
+    }
+
+    .footer-simple p {
+        margin: 4px 0;
+        font-size: 1rem;
+    }
+
+    .footer-icon {
+        width: 45px;
+        height: 45px;
+        margin: 10px;
+    }
+
+
+  
 }
+
+
+/* Contenedor general */
+.homeFbPosts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;              
+    flex-wrap: wrap;          
+    padding: 20px 0;
+}
+
+.homeFbPosts .fb-post {
+    display: flex;
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    margin: 0 !important;
+    height: 700px;
+
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+       width: 50px;
+    height: 50px;
+        filter: brightness(200%) invert(1);
+
+
+}
+
+
+
+
+
+
