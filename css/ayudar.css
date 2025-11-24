@@ -1,0 +1,78 @@
+.btn-insumos {
+    background-color: #619885;
+    color: #faf4ed;
+    padding: 15px 40px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-insumos:hover {
+    background-color: #31988f;
+    transform: scale(1.05);
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.seccion-rifa {
+    width: 100%;
+}
+
+.seccion-rifa img {
+    width: 65%;
+}
+
+.seccion-rifa form {
+    width: 35%;
+}
+
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #faf4ed;
+    display: inline-block;
+    padding: 6px 12px;
+    font-weight: 600;
+}
+
+.custom-file-upload:hover {
+    background-color: #ececec;
+}
+
+.custom-btn-submit {
+    background-color: #619885;
+    color: #faf4ed;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.custom-btn-submit:hover {
+    background-color: #31988f;
+    transform: scale(1.05);
+    font-weight: 600;
+}
+
+.perrito-transferencia {
+    width: 120px;
+    bottom: 54%;
+    left: 25%;
+    position: absolute;
+    z-index: 10;
+}
+
+.cuadro-transferencia {
+    margin-top: 100px;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+/* icono de copiar */
+i {
+    cursor: pointer;
+}
