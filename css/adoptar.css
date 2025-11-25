@@ -1,5 +1,5 @@
 /* =========================================================
-   📌 SECCIÓN: CONTENEDOR PRINCIPAL DE ADOPTAR
+    SECCIÓN: CONTENEDOR PRINCIPAL DE ADOPTAR
 ========================================================= */
 .cont-adoptar{
     min-height: 600px;
@@ -24,7 +24,7 @@
 }
 
 /* =========================================================
-   📌 SECCIÓN: GRILLA DE MASCOTAS
+    SECCIÓN: GRILLA DE MASCOTAS
 ========================================================= */
 .grilla {
     display: grid;
@@ -94,7 +94,70 @@
 }
 
 /* =========================================================
-   📌 SECCIÓN: DROPDOWN DE FILTROS
+    SECCIÓN: PAGINACION
+========================================================= */
+
+/* Contenedor centrado */
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+/* Botones generales: círculos huecos verdes */
+.pag-btn {
+    background: #faf4ed;              /* fondo igual que la página */
+    color: #4d7f6b;                 /* texto verde */
+    border: 2px solid #4d7f6b;      /* borde verde */
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+    /* sin hover */
+    transition: none;
+}
+
+/* Página activa */
+.pag-btn.active {
+    background: #4d7f6b;   /* fondo verde */
+    color: white;          /* texto blanco */
+}
+
+/* Elipsis (...) */
+.dots {
+    font-size: 20px;
+    color: #4d7f6b;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+/* Prev y Sig: NO circulares */
+.pag-btn.nav {
+    padding: 10px 30px;
+    border-radius: 15px;     /* suaves, no circulares */
+    background: #4d7f6b;
+    color: #faf4ed;
+    border: 1px solid #4d7f6b;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* =========================================================
+    SECCIÓN: DROPDOWN DE FILTROS
 ========================================================= */
 
 .dropdown-filtros {
@@ -199,15 +262,15 @@
 }
 
 /* =========================================================
-   📌 SECCIÓN: CHECKBOX ESTILO "ESTRELLA"
+    SECCIÓN: CHECKBOX ESTILO "ESTRELLA"
 ========================================================= */
 
-/* checkbox real oculto */
+/* checkbox oculto */
 .check-real {
     display: none;
 }
 
-/* contenedor clickeable (píldora) */
+/* contenedor clickeable */
 .filtro-option {
     display: inline-flex;
     align-items: center;
@@ -223,7 +286,7 @@
     user-select: none;
 }
 
-/* estrella decorativa */
+/* estrella */
 .star-icon {
     margin-bottom: 2px;
     width: 20px;
@@ -236,8 +299,37 @@
     transition: 0.25s ease;
 }
 
-/* cuando está seleccionado → estrella aparece */
+/* cuando está seleccionado la estrella aparece */
 .check-real:checked + .star-icon {
     opacity: 1;
     transform: scale(1);
+}
+
+/* =========================================================
+    SECCIÓN: HISTORIAS
+========================================================= */
+
+.cont-historias{
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-left: 135px;
+        padding: 20px;
+        margin-right: 135px;
+}
+
+.cont-historias p{
+        font-size: 18px;
+        padding-left: 10px;
+}
+
+.historias-img{
+        width: 440px;
+        height: 443px;
+        object-fit: cover;
+        border-radius: 5px;
+}
+
+.cont-historias h3{
+    margin-top: 0px;
 }
