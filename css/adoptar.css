@@ -312,9 +312,9 @@ h3.h3-grilla{
 .pag-btn.nav {
     padding: 10px 30px;
     border-radius: 15px;     /* suaves, no circulares */
-    background: #4d7f6b;
-    color: #faf4ed;
-    border: 1px solid #4d7f6b;
+    background: #faf4ed;
+    color: #4d7f6b;
+    border: 2px solid #4d7f6b;
     cursor: pointer;
     font-weight: bold;
     font-size: 16px;
