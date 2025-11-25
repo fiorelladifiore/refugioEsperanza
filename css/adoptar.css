@@ -81,7 +81,7 @@
     margin-top: 10px;
     padding: 10px 15px;
     background: #49816e;
-    color: white;
+    color: #faf4ed;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -132,7 +132,7 @@
 /* Página activa */
 .pag-btn.active {
     background: #4d7f6b;   /* fondo verde */
-    color: white;          /* texto blanco */
+    color: #faf4ed;          /* texto blanco */
 }
 
 /* Elipsis (...) */
@@ -186,7 +186,7 @@
 .cont-filtros{
     margin-top: 2px;
     background-color: #619885;
-    color: white;
+    color: #faf4ed;
     border-radius: 100%;
     width: 30px;
     height: 30px;
@@ -240,7 +240,7 @@
 
 /* Botón buscar */
 .btn-buscar {
-    background-color: white;
+    background-color: #faf4ed;
     color: #4d7f6b;
     border: 2px solid #4d7f6b;
     padding: 5px 10px;
@@ -252,12 +252,12 @@
 
 .btn-buscar:hover {
     background-color: #4d7f6b;
-    color: white;
+    color: #faf4ed;
 }
 
 .btn-buscar:active{
     background-color: #4d7f6b;
-    color: white;
+    color: #faf4ed;
     transform: scale(0.95); 
 }
 
