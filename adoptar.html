@@ -38,11 +38,95 @@
     </nav>
 
     <!-- MAIN -->
-    <main class="cont-adoptar" style="min-height: 600px;">
+    <main class="cont-adoptar">
         <h1>Perritos en adopción</h1>
-        <h2>Elegí tu próximo compañero</h2>
+        <h3>Elegí tu próximo compañero</h3>
 
-        <p>Filtros</p>
+        <div class="dropdown-filtros">
+
+            <p class="filtros" id="btnFiltros">
+                <img src="img/filter.png" class="icono-filtros" alt="icono filtros"> Filtros 
+                <span id="contador-filtros" class="cont-filtros">0</span>
+            </p>
+
+            <div class="menu-filtros" id="menuFiltros">
+                
+                <!-- Género -->
+                <div class="seccion-filtro">
+                    <h4>Género</h4>
+                    <div class="opciones">
+                        <label class="filtro-option">
+                            Macho
+                            <input type="checkbox" class="check-real">
+                            <span class="star-icon"></span>
+                        </label>
+
+                        <label class="filtro-option">
+                            Hembra
+                            <input type="checkbox" class="check-real">
+                            <span class="star-icon"></span>
+                        </label>
+
+
+                    </div>
+                </div>
+
+
+                <!-- Tamaño -->
+                <div class="seccion-filtro">
+                    <h4>Tamaño</h4>
+                    <div class="opciones">
+                        <label class="filtro-option">
+                            Pequeño
+                            <input type="checkbox" class="check-real">
+                            <span class="star-icon"></span>
+                        </label>
+
+                        <label class="filtro-option">
+                            Mediano
+                            <input type="checkbox" class="check-real">
+                            <span class="star-icon"></span>
+                        </label>
+
+                        <label class="filtro-option">
+                            Grande
+                            <input type="checkbox" class="check-real">
+                            <span class="star-icon"></span>
+                        </label>
+
+                    </div>
+                </div>
+
+                <!-- Edad -->
+                <div class="seccion-filtro">
+                    <h4>Edad</h4>
+                    <div class="opciones">
+                        <label class="filtro-option">
+                            Cachorro
+                            <input type="checkbox" class="check-real">
+                            <span class="star-icon"></span>
+                        </label>
+
+                        <label class="filtro-option">
+                            Joven
+                            <input type="checkbox" class="check-real">
+                            <span class="star-icon"></span>
+                        </label>
+
+                        <label class="filtro-option">
+                            Adulto
+                            <input type="checkbox" class="check-real">
+                            <span class="star-icon"></span>
+                        </label>
+
+                    </div>
+                </div>
+
+                <button class="btn-buscar">Buscar</button>
+
+            </div>
+
+        </div>
 
         <div class="grilla">
 
@@ -51,7 +135,7 @@
                 <img src="img/adoptar/Alfil.webp" alt="Mascota1">
                 <h3>Alfil</h3>
                 <p class="adoptar-p">Edad: 3 años</p>
-                <a href="#" class="ver-mas">Ver más</a>
+                <a href="#" class="ver-mas">Ver más+</a>
                 <br>
                 <button class="elem-btn">Adoptar</button>
             </div>
@@ -61,7 +145,7 @@
                 <img src="img/adoptar/Bambi.webp" alt="Mascota 2">
                 <h3>Bambi</h3>
                 <p class="adoptar-p">Edad: 2 años</p>
-                <a href="#" class="ver-mas">Ver más</a>
+                <a href="#" class="ver-mas">Ver más+</a>
                 <br>
                 <button class="elem-btn">Adoptar</button>
             </div>
@@ -71,7 +155,7 @@
                 <img src="img/adoptar/Carola.webp" alt="Mascota 3">
                 <h3>Carola</h3>
                 <p class="adoptar-p">Edad: 5 años</p>
-                <a href="#" class="ver-mas">Ver más</a>
+                <a href="#" class="ver-mas">Ver más+</a>
                 <br>
                 <button class="elem-btn">Adoptar</button>
             </div>
@@ -81,7 +165,7 @@
                 <img src="img/adoptar/Cata.webp" alt="Mascota 4">
                 <h3>Cata</h3>
                 <p class="adoptar-p">Edad: 1 año</p>
-                <a href="#" class="ver-mas">Ver más</a>
+                <a href="#" class="ver-mas">Ver más+</a>
                 <br>
                 <button class="elem-btn">Adoptar</button>
             </div>
@@ -91,7 +175,7 @@
                 <img src="img/adoptar/Toto.webp" alt="Mascota 5">
                 <h3>Toto</h3>
                 <p class="adoptar-p">Edad: 4 años</p>
-                <a href="#" class="ver-mas">Ver más</a>
+                <a href="#" class="ver-mas">Ver más+</a>
                 <br>
                 <button class="elem-btn">Adoptar</button>
             </div>
@@ -101,7 +185,7 @@
                 <img src="img/adoptar/Manchita.webp" alt="Mascota 6">
                 <h3>Manchita</h3>
                 <p class="adoptar-p">Edad: 2 años</p>
-                <a href="#" class="ver-mas">Ver más</a>
+                <a href="#" class="ver-mas">Ver más+</a>
                 <br>
                 <button class="elem-btn">Adoptar</button>
             </div>
@@ -137,5 +221,7 @@
 
         </div>
     </footer>    
+
+    <script src="js/adoptar.js"></script>
 </body>
 </html>
