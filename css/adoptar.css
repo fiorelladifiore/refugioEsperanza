@@ -1,5 +1,5 @@
 /* =========================================================
-   📌 SECCIÓN: CONTENEDOR PRINCIPAL DE ADOPTAR
+    SECCIÓN: CONTENEDOR PRINCIPAL DE ADOPTAR
 ========================================================= */
 .cont-adoptar{
     min-height: 600px;
@@ -24,7 +24,7 @@
 }
 
 /* =========================================================
-   📌 SECCIÓN: GRILLA DE MASCOTAS
+    SECCIÓN: GRILLA DE MASCOTAS
 ========================================================= */
 .grilla {
     display: grid;
@@ -94,7 +94,7 @@
 }
 
 /* =========================================================
-   📌 SECCIÓN: DROPDOWN DE FILTROS
+    SECCIÓN: DROPDOWN DE FILTROS
 ========================================================= */
 
 .dropdown-filtros {
@@ -199,7 +199,7 @@
 }
 
 /* =========================================================
-   📌 SECCIÓN: CHECKBOX ESTILO "ESTRELLA"
+    SECCIÓN: CHECKBOX ESTILO "ESTRELLA"
 ========================================================= */
 
 /* checkbox real oculto */
@@ -240,4 +240,28 @@
 .check-real:checked + .star-icon {
     opacity: 1;
     transform: scale(1);
+}
+
+/* =========================================================
+    SECCIÓN: HISTORIAS
+========================================================= */
+
+.cont-historias{
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-left: 135px;
+        padding: 20px;
+        margin-right: 135px;
+}
+
+.cont-historias p{
+        font-size: 18px;
+}
+
+.historias-img{
+        width: 480px;
+        height: 443px;
+        object-fit: cover;
+        border-radius: 5px;
 }
