@@ -1,59 +1,243 @@
+/* =========================================================
+   📌 SECCIÓN: CONTENEDOR PRINCIPAL DE ADOPTAR
+========================================================= */
+.cont-adoptar{
+    min-height: 600px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cont-adoptar h1{
+    margin-top: 100px; 
+    font-size: 3rem;
+    color: #4d7f6b;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cont-adoptar h3{
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* =========================================================
+   📌 SECCIÓN: GRILLA DE MASCOTAS
+========================================================= */
 .grilla {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        max-width: 900px;
-        margin: auto;
-        padding: 20px;
-    }
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+    padding: 0px 20px 20px 20px;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0px auto;
+}
 
 .elem-grilla {
-        border-radius: 10px;
-        padding: 15px;
-        text-align:left;
-        margin-top: 25px;
-        margin-bottom: 25px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align:left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .elem-grilla img {
-        width: 270px;
-        height: 270px;
-        object-fit: cover;
-        border-radius: 5px;
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .elem-grilla h3 {
-        margin: 10px 0 5px;
+    display: grid;
+    margin: 10px 0 5px;
+    font-family: 'Nunito', sans-serif;
+    justify-content: start;
+    font-weight: bold;
 }
 
-.elem-btn {
-        align-self: center;
-        margin-top: 10px;
-        padding: 10px 15px;
-        background: #2c7a7b;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 16px;
-        width: 100%;
-}
-
-.elem-btn:hover {
-        background: #246e6f;
+.adoptar-p {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 0px;
 }
 
 .ver-mas {
-    color: #0077cc;
+    font-family: 'Nunito', sans-serif;
+    color: #212529;
     text-decoration: none;
 }
 
-.cont-adoptar{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+.elem-btn {
+    font-family: 'Nunito', sans-serif;
+    align-self: center;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #49816e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
 }
-.adoptar-p{
-        margin-bottom: 0px;
+
+.elem-btn:hover {
+    background: #246e6f;
+}
+
+/* =========================================================
+   📌 SECCIÓN: DROPDOWN DE FILTROS
+========================================================= */
+
+.dropdown-filtros {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+    position: relative;
+}
+
+/* Texto "Filtros" + ícono */
+.filtros {
+    display: inline-flex;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 38px;
+}
+
+.icono-filtros {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+/* --------------------- contador redondo --------------------- */
+.cont-filtros{
+    margin-top: 2px;
+    background-color: #619885;
+    color: white;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* --------------------- menú desplegable --------------------- */
+.menu-filtros {
+    position: absolute;
+    top: 100%;
+    left: 38px;
+    z-index: 10;
+
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+
+    background: #faf4ed;
+    padding: 20px;
+    border: 3px solid #4d7f6b;
+    border-radius: 5px;
+    width: 413px;
+}
+
+/* cuando el menú está visible */
+.menu-filtros.activo {
+    display: flex;
+}
+
+/* --------------------- secciones dentro del menú --------------------- */
+.seccion-filtro h4 {
+    margin-bottom: 7px;
+    font-size: 16px;
+}
+
+.seccion-filtro .opciones {
+    display: flex;
+    gap: 15px;
+}
+
+.seccion-filtro .opciones label {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Botón buscar */
+.btn-buscar {
+    background-color: white;
+    color: #4d7f6b;
+    border: 2px solid #4d7f6b;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-buscar:hover {
+    background-color: #4d7f6b;
+    color: white;
+}
+
+.btn-buscar:active{
+    background-color: #4d7f6b;
+    color: white;
+    transform: scale(0.95); 
+}
+
+/* =========================================================
+   📌 SECCIÓN: CHECKBOX ESTILO "ESTRELLA"
+========================================================= */
+
+/* checkbox real oculto */
+.check-real {
+    display: none;
+}
+
+/* contenedor clickeable (píldora) */
+.filtro-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border: 1px solid #4d7f6b;
+    border-radius: 20px;
+    cursor: pointer;
+    width: fit-content;
+    transition: all 0.2s ease;
+    font-size: 16px;
+    color: #4d7f6b;
+    user-select: none;
+}
+
+/* estrella decorativa */
+.star-icon {
+    margin-bottom: 2px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/star1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: 0.25s ease;
+}
+
+/* cuando está seleccionado → estrella aparece */
+.check-real:checked + .star-icon {
+    opacity: 1;
+    transform: scale(1);
 }
