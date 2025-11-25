@@ -23,11 +23,18 @@
     line-height: 1.4;
     padding-left: 10px;
 }
-.h3-menu{
+h3.h3-menu{
     padding-bottom: 10px;
     font-size: 1.5rem;
     line-height: 1.4;
     text-align: center;
+}
+
+h3.h3-grilla{
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    padding-left: 0px;
 }
 
 /* =========================================================
