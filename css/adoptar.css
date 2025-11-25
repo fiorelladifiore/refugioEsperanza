@@ -5,6 +5,8 @@
     min-height: 600px;
     max-width: 1200px;
     margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
 }
 
 .cont-adoptar h1{
@@ -18,143 +20,9 @@
 .cont-adoptar h3{
     padding-bottom: 10px;
     font-size: 1.5rem;
-    margin-top: 20px;
     line-height: 1.4;
     text-align: center;
 }
-
-/* =========================================================
-    SECCIÓN: GRILLA DE MASCOTAS
-========================================================= */
-.grilla {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    justify-content: center;
-    justify-items: center;
-    margin-top: 20px;
-    padding: 0px 20px 20px 20px;
-    max-width: 1200px;
-    width: 80%;
-    margin: 0px auto;
-}
-
-.elem-grilla {
-    border-radius: 10px;
-    padding: 15px;
-    text-align:left;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.elem-grilla img {
-    width: 270px;
-    height: 270px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.elem-grilla h3 {
-    display: grid;
-    margin: 10px 0 5px;
-    font-family: 'Nunito', sans-serif;
-    justify-content: start;
-    font-weight: bold;
-}
-
-.adoptar-p {
-    font-family: 'Nunito', sans-serif;
-    margin-bottom: 0px;
-}
-
-.ver-mas {
-    font-family: 'Nunito', sans-serif;
-    color: #212529;
-    text-decoration: none;
-}
-
-.elem-btn {
-    font-family: 'Nunito', sans-serif;
-    align-self: center;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #49816e;
-    color: #faf4ed;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-}
-
-.elem-btn:hover {
-    background: #246e6f;
-}
-
-/* =========================================================
-    SECCIÓN: PAGINACION
-========================================================= */
-
-/* Contenedor centrado */
-.paginacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    width: 100%;
-}
-
-/* Botones generales: círculos huecos verdes */
-.pag-btn {
-    background: #faf4ed;              /* fondo igual que la página */
-    color: #4d7f6b;                 /* texto verde */
-    border: 2px solid #4d7f6b;      /* borde verde */
-    cursor: pointer;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-
-    /* sin hover */
-    transition: none;
-}
-
-/* Página activa */
-.pag-btn.active {
-    background: #4d7f6b;   /* fondo verde */
-    color: #faf4ed;          /* texto blanco */
-}
-
-/* Elipsis (...) */
-.dots {
-    font-size: 20px;
-    color: #4d7f6b;
-    font-weight: bold;
-    padding: 0 5px;
-}
-
-/* Prev y Sig: NO circulares */
-.pag-btn.nav {
-    padding: 10px 30px;
-    border-radius: 15px;     /* suaves, no circulares */
-    background: #4d7f6b;
-    color: #faf4ed;
-    border: 1px solid #4d7f6b;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-}
-
 
 /* =========================================================
     SECCIÓN: DROPDOWN DE FILTROS
@@ -305,17 +173,160 @@
     transform: scale(1);
 }
 
+
+
+/* =========================================================
+    SECCIÓN: GRILLA DE MASCOTAS
+========================================================= */
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+    padding: 0px 20px 20px 20px;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.elem-grilla {
+    border-radius: 10px;
+    padding: 15px;
+    text-align:left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.elem-grilla img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.elem-grilla h3 {
+    display: grid;
+    margin: 10px 0 5px;
+    font-family: 'Nunito', sans-serif;
+    justify-content: start;
+    font-weight: bold;
+}
+
+.adoptar-p {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 0px;
+}
+
+.ver-mas {
+    font-family: 'Nunito', sans-serif;
+    color: #212529;
+    text-decoration: none;
+}
+
+.elem-btn {
+    font-family: 'Nunito', sans-serif;
+    align-self: center;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #49816e;
+    color: #faf4ed;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.elem-btn:hover {
+    background: #246e6f;
+}
+
+/* =========================================================
+    SECCIÓN: PAGINACION
+========================================================= */
+
+/* Contenedor centrado */
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+/* Botones generales: círculos huecos verdes */
+.pag-btn {
+    background: #faf4ed;              /* fondo igual que la página */
+    color: #4d7f6b;                 /* texto verde */
+    border: 2px solid #4d7f6b;      /* borde verde */
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+    /* sin hover */
+    transition: none;
+}
+
+/* Página activa */
+.pag-btn.active {
+    background: #4d7f6b;   /* fondo verde */
+    color: #faf4ed;          /* texto blanco */
+}
+
+/* Elipsis (...) */
+.dots {
+    font-size: 20px;
+    color: #4d7f6b;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+/* Prev y Sig: NO circulares */
+.pag-btn.nav {
+    padding: 10px 30px;
+    border-radius: 15px;     /* suaves, no circulares */
+    background: #4d7f6b;
+    color: #faf4ed;
+    border: 1px solid #4d7f6b;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+
 /* =========================================================
     SECCIÓN: HISTORIAS
 ========================================================= */
-
+.hist-title{
+    padding-top: 200px;
+}
 .cont-historias{
-        margin-top: 80px;
+        /* margin-top: 80px; */
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         margin-left: 135px;
-        padding: 20px;
+        padding-left: 20px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-right: 25px;
         margin-right: 135px;
+        font-family: 'Nunito', sans-serif;
 }
 
 .cont-historias p{
@@ -325,7 +336,7 @@
 
 .historias-img{
         width: 440px;
-        height: 443px;
+        height: 480px;
         object-fit: cover;
         border-radius: 5px;
 }
