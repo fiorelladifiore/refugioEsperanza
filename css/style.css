@@ -401,3 +401,17 @@ footer {
   z-index: 10;
   border: 2px dashed #e0a800;
 }
+
+
+/* Iniciar sesión */
+
+.btn-login {
+    background-color: #619885;
+    color: #faf4ed;
+}
+
+.btn-login:hover {
+    background-color: #4d7f6b;
+    color: #faf4ed;
+    padding: 8px;
+}
