@@ -6,7 +6,7 @@
 
 .login-btn {
     background-color: white;
-    color: #4d7f6b; 
+    color: #4d7f6b;
     border: 2px solid #4d7f6b;
     padding: 15px 30px;
     font-size: 1rem;
@@ -15,7 +15,7 @@
     transition: all 0.2s ease;
 }
 
-a.login-btn{
+a.login-btn {
     font-size: 1.3rem;
 }
 
@@ -23,7 +23,7 @@ a.login-btn{
 .login-btn:active {
     background-color: #4d7f6b;
     color: white;
-    transform: scale(0.95); 
+    transform: scale(0.95);
 }
 
 .login-btn:hover {
@@ -34,11 +34,12 @@ a.login-btn{
 .adoptar:hover {
     background-color: #4d7f6b;
     color: white;
-    transform: scale(1.05); 
+    transform: scale(1.05);
     box-shadow: 0 0 15px rgba(77, 127, 107, 0.6);
 }
-body{
-   background-color: #faf4ed;
+
+body {
+    background-color: #faf4ed;
 }
 
 nav {
@@ -53,12 +54,12 @@ footer {
 
 
 .nav-btn {
-        position: relative;
+    position: relative;
     text-decoration: none;
     color: white;
     padding-bottom: 5px;
     font-weight: 600;
-    
+
     text-decoration: none;
     padding-left: 12px;
     padding-right: 16px;
@@ -89,7 +90,7 @@ footer {
 
 
 .login-btn {
-    font-size: 24px !important;
+    font-size: 23.53px !important;
     text-decoration: none;
     width: auto;
     font-size: medium;
@@ -105,34 +106,34 @@ footer {
     color: #619885;
 }
 
-.homeContainerMain{
-      max-width: 1700px;
+.homeContainerMain {
+    max-width: 1700px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    align-items: center;  
+    align-items: center;
 
 
     width: 100%;
-    background-color: #faf4ed; 
+    background-color: #faf4ed;
     padding: 0;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .homeBannerContainer1 {
-        height: 100vh; 
+    height: 100vh;
 
     background-color: #faf4ed;
-     width: 100%;
-    max-width: 1700px; 
-    margin: 0 auto; 
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     flex-direction: row;
     text-align: left;
- 
+
 }
 
 .homeBannerText1 {
@@ -140,18 +141,18 @@ footer {
     font-family: 'Nunito', sans-serif;
 }
 
- h1 {
+h1 {
 
     text-align: center;
-        margin-top: 0; 
-    transform: translateY(-50px); 
+    margin-top: 0;
+    transform: translateY(-50px);
     font-size: 3rem;
     color: #4d7f6b;
     font-weight: 700;
 }
 
 .homeBannerText1 p {
-        padding-left: 30px;
+    padding-left: 30px;
     padding-bottom: 10px;
     font-size: 1.6rem;
     margin-top: 20px;
@@ -164,7 +165,7 @@ footer {
     line-height: 1.4;
 }
 
-.homeBannerP{
+.homeBannerP {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,20 +188,20 @@ footer {
 .homeImage1 img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
 }
 
 
 
 .homeBannerContainer2 {
-      max-width: 1700px;
+    max-width: 1700px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     min-height: 768px;
-    background-image: url("../img/inicio/inicioPerro2.jpeg"); 
+    background-image: url("../img/inicio/inicioPerro2.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -216,11 +217,11 @@ footer {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
 }
 
 .homeBannerText2 {
-    position: relative; 
+    position: relative;
     max-width: 600px;
     color: white;
     text-align: right;
@@ -240,9 +241,9 @@ footer {
     font-size: 1.5rem;
     margin-top: 15px;
     line-height: 1.4;
-      max-width: 600px;   
-    margin: 0 auto;   
-    text-align: center; /
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;/
 }
 
 .home-btn {
@@ -259,9 +260,10 @@ footer {
 
 /* Hover */
 .home-btn:hover {
-    background-color: #4d7f6b;
+    background-color: #246e6f;
     transform: scale(1.05);
 }
+
 /* Responsivo */
 @media (max-width: 768px) {
 
@@ -274,14 +276,15 @@ footer {
 
     .homeBannerText1 h1 {
         font-size: 4rem;
-        transform: translateY(0); /* evita que se corte */
+        transform: translateY(0);
+        /* evita que se corte */
     }
 
     .homeBannerText1 p {
         font-size: 1.1rem;
     }
 
-    .homeBannerText2{
+    .homeBannerText2 {
         align-items: center;
         text-align: center;
     }
@@ -297,13 +300,13 @@ footer {
         object-fit: cover;
     }
 
-        .footer-simple .container {
+    .footer-simple .container {
         text-align: center;
         flex-direction: column !important;
         gap: 25px;
     }
 
-    footer{
+    footer {
         height: auto;
     }
 
@@ -327,10 +330,11 @@ footer {
         margin: 10px;
     }
 
-      .carousel-item img {
+    .carousel-item img {
         height: 250px;
     }
-    h1{
+
+    h1 {
         padding: 6px;
     }
 
@@ -339,10 +343,10 @@ footer {
 
 .homeFbPosts {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: stretch;
-    gap: 20px;              
-    flex-wrap:wrap;          
+    gap: 20px;
+    flex-wrap: wrap;
     padding: 20px 0;
 }
 
@@ -358,21 +362,22 @@ footer {
 
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon{
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     background-color: #000000;
 
     height: 100px;
-        filter: brightness(500%);
-        filter: opacity(1000);
-        color: #faf4ed;
+    filter: brightness(500%);
+    filter: opacity(1000);
+    color: #faf4ed;
 
 
 }
 
-.homeBannerContainer4{
-      position: relative;
-  width: 100%;
-  margin: auto;
+.homeBannerContainer4 {
+    position: relative;
+    width: 100%;
+    margin: auto;
 }
 
 
@@ -384,24 +389,24 @@ footer {
     padding-left: 90px;
     padding-right: 90px;
     width: 100%;
-    height: 610px; 
+    height: 610px;
     object-fit: cover;
     object-position: center;
 }
 
 .sticker {
-  position: absolute;
-  left: 30px;
-  background: #ffef5a;
-  color: #333;
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding: 8px 18px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  transform: rotate(-10deg);
-  z-index: 10;
-  border: 2px dashed #e0a800;
+    position: absolute;
+    left: 30px;
+    background: #ffef5a;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 8px 18px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transform: rotate(-10deg);
+    z-index: 10;
+    border: 2px dashed #e0a800;
 }
 
 
@@ -413,7 +418,12 @@ footer {
 }
 
 .btn-login:hover {
-    background-color: #4d7f6b;
+    background-color: #246e6f;
     color: #faf4ed;
     padding: 8px;
+}
+
+h2.text-center {
+    color: #4d7f6b;
+    font-size: 35.2px;
 }

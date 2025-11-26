@@ -4,7 +4,7 @@
     padding: 40px;
     background: #ffffff;
     border-radius: 18px;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
     text-align: center;
 }
 
@@ -45,7 +45,7 @@
 .contact-form textarea:focus {
     border-color: #619885;
     background: #fff;
-    box-shadow: 0 0 0 3px rgba(97,152,133,0.15);
+    box-shadow: 0 0 0 3px rgba(97, 152, 133, 0.15);
 }
 
 
@@ -59,10 +59,10 @@
     transition: 0.25s ease;
 }
 
-.contact-form input:focus + label,
-.contact-form input:not(:placeholder-shown) + label,
-.contact-form textarea:focus + label,
-.contact-form textarea:not(:placeholder-shown) + label {
+.contact-form input:focus+label,
+.contact-form input:not(:placeholder-shown)+label,
+.contact-form textarea:focus+label,
+.contact-form textarea:not(:placeholder-shown)+label {
     top: -10px;
     left: 10px;
     font-size: 0.75rem;
@@ -87,7 +87,7 @@
 }
 
 .contact-form button:hover {
-    background: #3b6957;
+    background: #246e6f;
     transform: translateY(-2px);
 }
 

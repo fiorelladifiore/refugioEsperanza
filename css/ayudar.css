@@ -1,6 +1,7 @@
 * {
     font-family: "Nunito", sans-serif;
 }
+
 /* Sección donar insumos */
 
 .container-ayudar {
@@ -38,8 +39,9 @@
 }
 
 .btn-insumos:hover {
-    background-color: #31988f;
+    background-color: #246e6f;
     transform: scale(1.05);
+    color: #faf4ed;
 }
 
 
@@ -65,12 +67,12 @@ input[type="file"] {
     margin-top: 20px;
 }
 
-.titulo-rifa h1{
+.titulo-rifa h1 {
     font-size: 50px;
     color: #49816e;
 }
 
-.titulo-rifa h2{
+.titulo-rifa h2 {
     font-size: 18px;
 }
 
@@ -95,9 +97,10 @@ input[type="file"] {
 }
 
 .custom-btn-submit:hover {
-    background-color: #31988f;
+    background-color: #246e6f;
     transform: scale(1.05);
     font-weight: 600;
+    color: #faf4ed;
 }
 
 

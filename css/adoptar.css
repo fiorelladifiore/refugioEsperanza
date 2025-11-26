@@ -1,7 +1,7 @@
 /* =========================================================
     SECCIÓN: CONTENEDOR PRINCIPAL DE ADOPTAR
 ========================================================= */
-.cont-adoptar{
+.cont-adoptar {
     min-height: 600px;
     max-width: 1200px;
     margin: 0 auto;
@@ -9,28 +9,29 @@
     line-height: 1.5;
 }
 
-.cont-adoptar h1{
-    margin-top: 100px; 
+.cont-adoptar h1 {
+    margin-top: 100px;
     font-size: 3rem;
     color: #4d7f6b;
     font-weight: 700;
     text-align: center;
 }
 
-.cont-adoptar h3{
+.cont-adoptar h3 {
     padding-bottom: 10px;
     font-size: 1.5rem;
     line-height: 1.4;
     padding-left: 10px;
 }
-h3.h3-menu{
+
+h3.h3-menu {
     padding-bottom: 10px;
     font-size: 1.5rem;
     line-height: 1.4;
     text-align: center;
 }
 
-h3.h3-grilla{
+h3.h3-grilla {
     padding-bottom: 10px;
     font-size: 1.5rem;
     line-height: 1.4;
@@ -64,7 +65,7 @@ h3.h3-grilla{
 }
 
 /* --------------------- contador redondo --------------------- */
-.cont-filtros{
+.cont-filtros {
     margin-top: 2px;
     background-color: #619885;
     color: #faf4ed;
@@ -137,10 +138,10 @@ h3.h3-grilla{
     color: #faf4ed;
 }
 
-.btn-buscar:active{
+.btn-buscar:active {
     background-color: #4d7f6b;
     color: #faf4ed;
-    transform: scale(0.95); 
+    transform: scale(0.95);
 }
 
 /* =========================================================
@@ -182,7 +183,7 @@ h3.h3-grilla{
 }
 
 /* cuando está seleccionado la estrella aparece */
-.check-real:checked + .star-icon {
+.check-real:checked+.star-icon {
     opacity: 1;
     transform: scale(1);
 }
@@ -207,7 +208,7 @@ h3.h3-grilla{
 .elem-grilla {
     border-radius: 10px;
     padding: 15px;
-    text-align:left;
+    text-align: left;
     margin-top: 25px;
     margin-bottom: 25px;
     width: fit-content;
@@ -239,7 +240,7 @@ h3.h3-grilla{
     font-family: 'Nunito', sans-serif;
     color: #212529;
     text-decoration: none;
-    font-style:italic;
+    font-style: italic;
 }
 
 .elem-btn {
@@ -300,7 +301,8 @@ img.icono-accion {
 .panel-editar {
     position: fixed;
     top: 0;
-    right: -400px;   /* oculto inicialmente */
+    right: -400px;
+    /* oculto inicialmente */
     width: 350px;
     height: 100vh;
     background: #faf4ed;
@@ -311,7 +313,8 @@ img.icono-accion {
 }
 
 .panel-editar.activo {
-    right: 0;        /* aparece */
+    right: 0;
+    /* aparece */
 }
 
 .panel-contenido {
@@ -383,9 +386,12 @@ img.icono-accion {
 
 /* Botones generales: círculos huecos verdes */
 .pag-btn {
-    background: #faf4ed;              /* fondo igual que la página */
-    color: #4d7f6b;                 /* texto verde */
-    border: 2px solid #4d7f6b;      /* borde verde */
+    background: #faf4ed;
+    /* fondo igual que la página */
+    color: #4d7f6b;
+    /* texto verde */
+    border: 2px solid #4d7f6b;
+    /* borde verde */
     cursor: pointer;
     width: 45px;
     height: 45px;
@@ -408,8 +414,10 @@ img.icono-accion {
 
 /* Página activa */
 .pag-btn.active {
-    background: #4d7f6b;   /* fondo verde */
-    color: #faf4ed;          /* texto blanco */
+    background: #4d7f6b;
+    /* fondo verde */
+    color: #faf4ed;
+    /* texto blanco */
 }
 
 /* Elipsis (...) */
@@ -423,7 +431,8 @@ img.icono-accion {
 /* Prev y Sig: NO circulares */
 .pag-btn.nav {
     padding: 10px 30px;
-    border-radius: 15px;     /* suaves, no circulares */
+    border-radius: 15px;
+    /* suaves, no circulares */
     background: #faf4ed;
     color: #4d7f6b;
     border: 2px solid #4d7f6b;
@@ -438,28 +447,29 @@ img.icono-accion {
 /* =========================================================
     SECCIÓN: HISTORIAS
 ========================================================= */
-.hist-title{
+.hist-title {
     padding-top: 200px;
 }
-.cont-historias{
-        /* margin-top: 80px; */
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        margin-left: 135px;
-        padding-left: 20px;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        padding-right: 25px;
-        margin-right: 135px;
-        font-family: 'Nunito', sans-serif;
+
+.cont-historias {
+    /* margin-top: 80px; */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-left: 135px;
+    padding-left: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 25px;
+    margin-right: 135px;
+    font-family: 'Nunito', sans-serif;
 }
 
-.cont-historias p{
-        font-size: 18px;
-        padding-left: 60px;
+.cont-historias p {
+    font-size: 18px;
+    padding-left: 60px;
 }
 
-.cont-historias h3{
+.cont-historias h3 {
     margin-top: 0px;
     font-weight: bold;
     color: #4d7f6b;
@@ -469,7 +479,7 @@ img.icono-accion {
 
 /* Imagen */
 .historias-img {
-    width: 440px; 
+    width: 440px;
     height: 480px;
     border-radius: 5px;
     object-fit: cover;
@@ -516,7 +526,7 @@ img.icono-accion {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     display: none;
     justify-content: center;
     align-items: center;
@@ -531,7 +541,7 @@ img.icono-accion {
     border-radius: 10px;
     text-align: center;
     font-family: 'Nunito', sans-serif;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Imagen */
