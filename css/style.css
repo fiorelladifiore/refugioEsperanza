@@ -83,6 +83,9 @@ footer {
     width: 100%;
 }
 
+.nav-btn.active::after {
+    width: 100%;
+}
 
 
 .login-btn {
