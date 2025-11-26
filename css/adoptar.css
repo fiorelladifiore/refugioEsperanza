@@ -239,6 +239,7 @@ h3.h3-grilla{
     font-family: 'Nunito', sans-serif;
     color: #212529;
     text-decoration: none;
+    font-style:italic;
 }
 
 .elem-btn {
