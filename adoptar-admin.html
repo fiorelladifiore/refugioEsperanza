@@ -230,16 +230,42 @@
             <button id="next" class="pag-btn nav">Sig</button>
         </div>
 
+        <!-- PANEL DE EDICION GRILLA -->
+        <div id="panelEditar" class="panel-editar">
+            <div class="panel-contenido">
+
+                <span id="cerrarPanel" class="cerrar-panel">&times;</span>
+
+                <!-- Imagen clickable para cambiar -->
+                <label for="inputFoto" class="editar-img-label">
+                    <img id="imgEditar" class="editar-img" src="img/adoptar/image.png" alt="perrito">
+                </label>
+
+                <!-- Input oculto -->
+                <input type="file" id="inputFoto" accept="image/*" style="display: none;">
+
+
+                <label>Nombre</label>
+                <input type="text" id="inputNombre" class="input-editar">
+
+                <label>Edad</label>
+                <input type="text" id="inputEdad" class="input-editar">
+
+                <button id="guardarCambios" class="btn-guardar">Guardar cambios</button>
+            </div>
+        </div> 
+
         
         <h1 class="hist-title">Historias</h1>
 
         <div class="cont-historias">
-                <!-- Contenedor de íconos arriba a la derecha -->
-                <div class="hist-icons">
-                    <img src="img/adoptar/edit.png" class="icono-hist editar-hist">
-                    <img src="img/adoptar/delete.png" class="icono-hist eliminar-hist">
-                </div>
-                <div class="hist-img-wrapper">
+                
+                <div class="hist-img-cont">
+                    <!-- Contenedor de íconos arriba a la derecha -->
+                    <div class="hist-icons">
+                        <img src="img/adoptar/edit.png" class="icono-hist">
+                        <img src="img/adoptar/delete.png" class="icono-hist">
+                    </div>
                     <img class="historias-img" src="img/adoptar/perrfhd1.jpg" alt="Mascota 6">
                 </div>
 
@@ -257,8 +283,12 @@
         
         </div>
 
-            <div class="cont-historias">
-                <div class="hist-img-wrapper">
+        <div class="cont-historias">
+                <div class="hist-img-cont">
+                    <div class="hist-icons">
+                        <img src="img/adoptar/edit.png" class="icono-hist">
+                        <img src="img/adoptar/delete.png" class="icono-hist">
+                    </div>
                     <img class="historias-img" src="img/adoptar/perrfh2.jpg" alt="Mascota 6">
                 </div>
                 
@@ -275,7 +305,11 @@
         </div>
 
         <div class="cont-historias">
-            <div class="hist-img-wrapper">
+            <div class="hist-img-cont">
+                <div class="hist-icons">
+                    <img src="img/adoptar/edit.png" class="icono-hist">
+                    <img src="img/adoptar/delete.png" class="icono-hist">
+                </div>
                 <img class="historias-img" src="img/adoptar/perrfhd5.jpg" alt="Mascota 6">
             </div>
             
@@ -293,29 +327,23 @@
         </div>
 
 
-        <div id="panelEditar" class="panel-editar">
-            <div class="panel-contenido">
+        <!-- PANEL DE EDICIÓN HISTORIA -->
+        <div class="edit-panel" id="editPanel">
+            <div class="edit-content">
+                
+                <h3>Editar imagen</h3>
 
-                <span id="cerrarPanel" class="cerrar-panel">&times;</span>
+                <img id="editPreview" class="edit-img" src="" alt="Imagen a editar">
 
-                <!-- Imagen clickable para cambiar -->
-                <label for="inputFoto" class="editar-img-label">
-                    <img id="imgEditar" class="editar-img" src="" alt="perrito">
+                <label class="btn-file">
+                    Elegir foto
+                    <input type="file" id="editFileInput" accept="image/*">
                 </label>
 
-                <!-- Input oculto -->
-                <input type="file" id="inputFoto" accept="image/*" style="display: none;">
+                <button id="cerrarEditPanel" class="btn-cerrar">Cerrar</button>
 
-
-                <label>Nombre</label>
-                <input type="text" id="inputNombre" class="input-editar">
-
-                <label>Edad</label>
-                <input type="text" id="inputEdad" class="input-editar">
-
-                <button id="guardarCambios" class="btn-guardar">Guardar cambios</button>
             </div>
-        </div> 
+        </div>
 
 
     </main>

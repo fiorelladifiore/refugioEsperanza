@@ -23,7 +23,6 @@ checkboxes.forEach(cb => cb.addEventListener("change", actualizarContador));
 
 
 
-
 //Manejo de paginacion
 const numBtns = document.querySelectorAll(".pag-btn.num");
 const prevBtn = document.getElementById("prev");
@@ -72,11 +71,9 @@ document.querySelectorAll(".icono-accion[alt='editar']").forEach((icono) => {
 
         tarjetaActual = icono.closest(".elem-grilla");
 
-        const img = tarjetaActual.querySelector("img").src;
         const nombre = tarjetaActual.querySelector("h3").textContent;
         const edad = tarjetaActual.querySelector(".adoptar-p").textContent.replace("Edad: ", "");
 
-        imgEditar.src = img;
         inputNombre.value = nombre;
         inputEdad.value = edad;
 
@@ -119,4 +116,42 @@ inputFoto.addEventListener("change", () => {
 
     reader.readAsDataURL(file);
 });
+
+
+
+
+//Manejo de panel de edicion historias
+
+
+// Abrir panel de edición
+document.querySelectorAll(".icono-hist").forEach(icono => {
+    icono.addEventListener("click", function () {
+
+        // buscamos la imagen asociada
+        const img = this.closest(".hist-img-cont").querySelector(".historias-img");
+
+        // ponemos la imagen en el panel
+        document.getElementById("editPreview").src = img.src;
+
+        // mostramos el panel
+        document.getElementById("editPanel").style.display = "flex";
+    });
+});
+
+// Cerrar panel
+document.getElementById("cerrarEditPanel").addEventListener("click", () => {
+    document.getElementById("editPanel").style.display = "none";
+});
+
+// Cuando el usuario elige una nueva imagen
+document.getElementById("editFileInput").addEventListener("change", function () {
+    if (this.files && this.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            document.getElementById("editPreview").src = e.target.result;
+        }
+        reader.readAsDataURL(this.files[0]);
+    }
+});
+
 
