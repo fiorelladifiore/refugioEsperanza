@@ -9,9 +9,14 @@
     color: #4d7f6b; 
     border: 2px solid #4d7f6b;
     padding: 15px 30px;
+    font-size: 1rem;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease;
+}
+
+a.login-btn{
+    font-size: 1.3rem;
 }
 
 
