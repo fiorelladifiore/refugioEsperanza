@@ -54,3 +54,69 @@ nextBtn.addEventListener("click", () => {
     }
 });
 
+
+//Manejo de editar
+
+// Selección de componentes del panel
+const panel = document.getElementById("panelEditar");
+const cerrarPanel = document.getElementById("cerrarPanel");
+const imgEditar = document.getElementById("imgEditar");
+const inputNombre = document.getElementById("inputNombre");
+const inputEdad = document.getElementById("inputEdad");
+
+let tarjetaActual = null;
+
+// Abrir panel desde icono EDITAR
+document.querySelectorAll(".icono-accion[alt='editar']").forEach((icono) => {
+    icono.addEventListener("click", () => {
+
+        tarjetaActual = icono.closest(".elem-grilla");
+
+        const img = tarjetaActual.querySelector("img").src;
+        const nombre = tarjetaActual.querySelector("h3").textContent;
+        const edad = tarjetaActual.querySelector(".adoptar-p").textContent.replace("Edad: ", "");
+
+        imgEditar.src = img;
+        inputNombre.value = nombre;
+        inputEdad.value = edad;
+
+        panel.classList.add("activo");
+    });
+});
+
+// Cerrar panel
+cerrarPanel.addEventListener("click", () => {
+    panel.classList.remove("activo");
+});
+
+// Guardar cambios (solo cambia texto en pantalla por ahora)
+document.getElementById("guardarCambios").addEventListener("click", () => {
+    if (tarjetaActual) {
+        tarjetaActual.querySelector("h3").textContent = inputNombre.value;
+        tarjetaActual.querySelector(".adoptar-p").textContent = "Edad: " + inputEdad.value;
+    }
+    panel.classList.remove("activo");
+});
+
+const inputFoto = document.getElementById("inputFoto");
+
+// Cuando el usuario selecciona una nueva foto dentro del panel
+inputFoto.addEventListener("change", () => {
+    const file = inputFoto.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+
+    reader.onload = (e) => {
+        const nuevaImagen = e.target.result;
+
+        // Solo cambia la imagen del panel
+        imgEditar.src = nuevaImagen;
+
+        // No tocar la imagen del icono editar
+        // No actualizar la imagen de la tarjeta (a menos que tú quieras)
+    };
+
+    reader.readAsDataURL(file);
+});
+
