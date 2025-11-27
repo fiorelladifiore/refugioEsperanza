@@ -338,6 +338,7 @@ h1 {
         padding: 6px;
     }
 
+
 }
 
 
@@ -345,15 +346,17 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
     padding: 20px 0;
 }
 
 .homeFbPosts .fb-post {
+    padding-top: 30px;
     display: flex;
     background-color: white;
-    padding: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
     border-radius: 20px;
     background: #ffffff;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
