@@ -189,6 +189,31 @@ h3.h3-grilla {
 }
 
 
+/* =========================================================
+    SECCIÓN: BOTON LIMPIAR FILTROS
+========================================================= */
+
+.btn-limpiar-filtros {
+    display: none; /* Oculto hasta que se selecciona un filtro */
+    background-color: #faf4ed;
+    color: #b83a3a;
+    border: 2px solid #b83a3a;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-limpiar-filtros:hover {
+    background-color: #b83a3a;
+    color: #faf4ed;
+}
+
+
+
+
 
 /* =========================================================
     SECCIÓN: GRILLA DE MASCOTAS
@@ -535,7 +560,7 @@ img.icono-accion {
 
 /* Contenido del panel */
 .edit-content {
-    background: white;
+    background: #faf4ed;
     width: 380px;
     padding: 25px;
     border-radius: 10px;
@@ -557,7 +582,7 @@ img.icono-accion {
 /* Botón "Elegir foto" */
 .btn-file {
     background: #6bbd8b;
-    color: white;
+    color: #faf4ed;
     padding: 12px 18px;
     border-radius: 8px;
     cursor: pointer;
@@ -583,5 +608,29 @@ img.icono-accion {
 
 .btn-cerrar:hover {
     background: #6bbd8b;
-    color: white;
+    color: #faf4ed;
+}
+
+/* =========================================================
+    SECCIÓN: CAMBIOS 
+========================================================= */
+.mensaje-guardado {
+    position: fixed;
+    top: 30px;
+    left: 85%;
+    transform: translateX(-50%);
+    background: #4d7f6b;
+    color: #faf4ed;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 2000;
+}
+
+.mensaje-guardado.activo {
+    opacity: 1;
 }

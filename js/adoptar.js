@@ -62,6 +62,7 @@ const cerrarPanel = document.getElementById("cerrarPanel");
 const imgEditar = document.getElementById("imgEditar");
 const inputNombre = document.getElementById("inputNombre");
 const inputEdad = document.getElementById("inputEdad");
+const btnGuardar = document.getElementById("guardarCambios");
 
 let tarjetaActual = null;
 
@@ -81,41 +82,57 @@ document.querySelectorAll(".icono-accion[alt='editar']").forEach((icono) => {
     });
 });
 
-// Cerrar panel
-cerrarPanel.addEventListener("click", () => {
-    panel.classList.remove("activo");
-});
 
-// Guardar cambios (solo cambia texto en pantalla por ahora)
-document.getElementById("guardarCambios").addEventListener("click", () => {
-    if (tarjetaActual) {
-        tarjetaActual.querySelector("h3").textContent = inputNombre.value;
-        tarjetaActual.querySelector(".adoptar-p").textContent = "Edad: " + inputEdad.value;
-    }
-    panel.classList.remove("activo");
-});
+if (panel && cerrarPanel && btnGuardar) {
+
+    // Cerrar panel
+    cerrarPanel.addEventListener("click", () => {
+        panel.classList.remove("activo");
+    });
+
+    // Guardar cambios
+    btnGuardar.addEventListener("click", () => {
+        if (tarjetaActual) {
+            tarjetaActual.querySelector("h3").textContent = inputNombre.value;
+            tarjetaActual.querySelector(".adoptar-p").textContent =
+                "Edad: " + inputEdad.value;
+        }
+        panel.classList.remove("activo");
+
+        // Mostrar mensaje "Cambios guardados"
+        const msg = document.getElementById("mensajeGuardado");
+        msg.classList.add("activo");
+
+        // Ocultar después de 2.5 segundos
+        setTimeout(() => {
+            msg.classList.remove("activo");
+        }, 2500);
+    });
+}
+
 
 const inputFoto = document.getElementById("inputFoto");
 
 // Cuando el usuario selecciona una nueva foto dentro del panel
-inputFoto.addEventListener("change", () => {
-    const file = inputFoto.files[0];
-    if (!file) return;
 
-    const reader = new FileReader();
+if (inputFoto) {
+    inputFoto.addEventListener("change", () => {
+        const file = inputFoto.files[0];
+        if (!file) return;
 
-    reader.onload = (e) => {
-        const nuevaImagen = e.target.result;
+        const reader = new FileReader();
 
-        // Solo cambia la imagen del panel
-        imgEditar.src = nuevaImagen;
+        reader.onload = (e) => {
+            const nuevaImagen = e.target.result;
 
-        // No tocar la imagen del icono editar
-        // No actualizar la imagen de la tarjeta (a menos que tú quieras)
-    };
+            // Solo cambia la imagen dentro del panel
+            imgEditar.src = nuevaImagen;
+        };
 
-    reader.readAsDataURL(file);
-});
+        reader.readAsDataURL(file);
+    });
+}
+
 
 
 
@@ -138,20 +155,65 @@ document.querySelectorAll(".icono-hist").forEach(icono => {
     });
 });
 
+
+
+const cerrarEditPanel = document.getElementById("cerrarEditPanel");
+const editPanel = document.getElementById("editPanel");
+const editFileInput = document.getElementById("editFileInput");
+const editPreview = document.getElementById("editPreview");
+
 // Cerrar panel
-document.getElementById("cerrarEditPanel").addEventListener("click", () => {
-    document.getElementById("editPanel").style.display = "none";
-});
+if (cerrarEditPanel && editPanel) {
+    cerrarEditPanel.addEventListener("click", () => {
+        editPanel.style.display = "none";
+    });
+}
 
 // Cuando el usuario elige una nueva imagen
-document.getElementById("editFileInput").addEventListener("change", function () {
-    if (this.files && this.files[0]) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            document.getElementById("editPreview").src = e.target.result;
+if (editFileInput && editPreview) {
+    editFileInput.addEventListener("change", function () {
+        if (this.files && this.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                editPreview.src = e.target.result;
+            };
+            reader.readAsDataURL(this.files[0]);
         }
-        reader.readAsDataURL(this.files[0]);
+    });
+}
+
+
+//Limpiar Filtros
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const checkboxes = document.querySelectorAll(".check-real");
+    const btnLimpiar = document.getElementById("btnLimpiarFiltros");
+
+    // Función para actualizar visibilidad del botón
+    function actualizarBotonLimpiar() {
+        const algunoSeleccionado = Array.from(checkboxes).some(ch => ch.checked);
+
+        btnLimpiar.style.display = algunoSeleccionado ? "block" : "none";
     }
+
+    // Escuchar cambios en todos los checkboxes
+    checkboxes.forEach(ch => {
+        ch.addEventListener("change", actualizarBotonLimpiar);
+    });
+
+    // Acción limpiar filtros
+    if (btnLimpiar) {
+        btnLimpiar.addEventListener("click", () => {
+        checkboxes.forEach(ch => {
+            ch.checked = false;
+        });
+
+        actualizarBotonLimpiar(); // Ocultar botón
+        actualizarContador(); 
+
+    });
+    }
+    
+
 });
-
-
