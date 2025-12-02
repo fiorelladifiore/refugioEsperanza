@@ -634,3 +634,21 @@ img.icono-accion {
 .mensaje-guardado.activo {
     opacity: 1;
 }
+
+
+.mensaje-filtro {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4d7f6b;
+    color: #faf4ed;
+    padding: 10px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity .4s ease;
+    z-index: 9999;
+}
+
+.mensaje-filtro.activo {
+    opacity: 1;
+}

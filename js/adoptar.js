@@ -21,6 +21,20 @@ function actualizarContador() {
 // Cada vez que se selecciona o des-selecciona un filtro:
 checkboxes.forEach(cb => cb.addEventListener("change", actualizarContador));
 
+//Filtro aplicado
+
+document.getElementById("btnBuscar").addEventListener("click", () => {
+
+// Mostrar mensaje "Cambios guardados"
+        const msgF = document.getElementById("mensajeFiltros");
+        msgF.classList.add("activo");
+
+        // Ocultar después de 2.5 segundos
+        setTimeout(() => {
+            msgF.classList.remove("activo");
+        }, 2500);
+});
+
 
 
 //Manejo de paginacion
